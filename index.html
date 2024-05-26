@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Encryption & Decryption</title>
+    </head>
+    <body>
+        <h2>Encryption & Decryption Example</h2>
+        <!--Encrypt Form-->
+        <form method="post" action="action.php">
+            <label for="plaintext">Enter text to encrypt:</label><br>
+            <textarea name="plaintext" id="plaintext" rows="4" cols="40"></textarea>
+            <br>
+            <br>
+            <label for="encryptionkey">Enter the encryption key:</label>
+            <br>
+            <input type="password" name="encryptionkey" id="encryptionkey">
+            <br>
+            <br>
+            <input type="submit" name="encrypt" value="Encrypt">
+        </form>
+
+        <!--Decrypt Form-->
+        <form method="post" action="action.php">
+            <label for="encryptedText">Enter text to decrypt:</label>
+            <br>
+            <textarea name="encryptedText" id="encryptedText" rows="4" cols="40"></textarea>
+            <br>
+            <br>
+            <label for="decryptionKey">Enter the decryption key:</label>
+            <br>
+            <input type="password" name="decryptionKey" id="decryptionKey">
+            <br>
+            <br>
+            <input type="submit" name="decrypt" value="Decrypt">
+        </form>
+    </body>
+</html>
